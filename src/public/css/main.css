@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
