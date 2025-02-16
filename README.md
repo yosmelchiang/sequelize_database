@@ -1,43 +1,54 @@
 # Project
-This is a simple web project using Role-Based-Access-Ctronl (RBAC) from an online database hosted on aiven.io
+This is a simple web project we have been playing with in class using Role-Based-Access-Ctronl (RBAC), sequelize and passporJs.
 
 # Tech Stack
-**Client**: EJS templates, express ejs layouts
-**Server**: Node, ExpressJs
-**Auth**: PassportJS, Passport-local strategy
-**Database**: mysql, aiven cloud hosting(mysql support)
-**ORM**: Sequelize
+- **Client**: EJS templates, express ejs layouts
+- **Server**: Node, ExpressJs
+- **Auth**: PassportJS, Passport-local strategy
+- **Database**: mysql, aiven cloud hosting(mysql support)
+- **ORM**: Sequelize
 
 # Run locally
 
-Clone the project 
+## Clone the project 
+```
+git clone https://github.com/yosmelchiang/sequelize_database.git
+```
 
-`git clone https://github.com/yosmelchiang/sequelize_database.git`
+## Go to the project directory
+```
+cd sequelize_database
+```
 
-Go to the project directory
+## Install dependencies
+```
+npm install
+```
 
-`cd sequelize_database`
+## Create .env file
+```
+touch .env
+```
 
-Install dependencies
-`npm install`
-
-Create .env file and add Environment Variables
-`touch .env`
-
-Start the server
-`npm start`
-
-# Features
-- Animals page and option to add a new animal
-- Species page
-- User login/logout and user details page
-
-# Environment Variables
+# Add environment Variables
+```
 PORT="your_db_port"
 DB_NAME="your_db_name"
 DB_USER="your_db_user"
 DB_PASSWORD="your_db_password"
 DB_DIALECT="mysql"
+```
+
+## Start the server
+```
+npm start
+```
+
+# Features
+- View animals page and option to add a new animal (requires login)
+- View current available species (fetched from database, does not support adding new species yet)
+- Login with a current user or create one (role is set to User by default, Admin role has to be set in the database for now)
+- View user details page
 
 # Authors
 - [@yosmelchiang](https://www.github.com/yosmelchiang)
