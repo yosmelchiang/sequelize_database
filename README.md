@@ -47,7 +47,7 @@ npm start
 ```
 
 # Features
-- View animals page and option to add a new animal (requires login)
+- View animals page and option to add a new animal (adding animals requires login)
 - View current available species (fetched from database, does not support adding new species yet)
 - Login with a current user or create one (role is set to User by default, Admin role has to be set in the database for now)
 - View user details page
