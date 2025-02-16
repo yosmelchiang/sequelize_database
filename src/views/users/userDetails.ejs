@@ -1,0 +1,55 @@
+<style>
+  .userDetails {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  table {
+    flex: 1;
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid #000000;
+  }
+
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  th {
+    color: #c2bcbc;
+    font-weight: bold;
+  }
+
+  tr:hover {
+    background-color: #2f2f2f;
+  }
+</style>
+<div class="userDetails">
+  <h1>Current user</h1>
+
+  <table>
+    <tr>
+      <th>id</th>
+      <th>username</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Role</th>
+    </tr>
+    <% if(user) { %>
+      <tr>
+        <td><%= user.id%></td>
+        <td><%= user.username%></td>
+        <td><%= user.firstName%></td>
+        <td><%= user.lastName%></td>
+        <td><%= user.role%></td>
+      </tr>
+    <% } %>
+  </table>
+</div>

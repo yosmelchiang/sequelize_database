@@ -1,0 +1,16 @@
+<form method="post" action="/animals/add">
+  <input type="text" placeholder="Name" name="name">
+  
+  <select name="species">
+    <% if (species.length > 0) { %>
+      <% species.forEach(function(s) { %>
+        <option value="<%= s.id %>"><%= s.name %></option>
+      <% }); %>
+    <% } else { %>
+      <option disabled>No species available</option>
+    <% } %>
+  </select>
+
+  <input type="text" name="UserId" value="<%= userId %>" hidden>
+  <button type="submit">Add 🐒</button>
+</form>
