@@ -32,10 +32,12 @@ touch .env
 
 # Add environment Variables
 ```
-PORT="your_db_port"
-DB_NAME="your_db_name"
-DB_USER="your_db_user"
-DB_PASSWORD="your_db_password"
+PORT=your_host_port
+DB_PORT=your_database_port
+DB_HOST=your_database_host
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
 DB_DIALECT="mysql"
 ```
 
